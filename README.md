@@ -76,7 +76,7 @@ Once done, you can use Postman (or other app you want) and load the following ro
 - POST (Add) : http://localhost:8000/weapons/add
 
 Data example Add : 
-
+```sh
 {
     "id": "64108c2e01adab428f318fd1",
     "name": "Fragarach",
@@ -84,9 +84,12 @@ Data example Add :
     "description": "A mythic weapon",
     "price": 100000000
 }
+```
+
+
 
 - PUT (Edit) : http://localhost:8000/weapons/edit
-
+```sh
 {
     "id": "64108c2e01adab428f318fd1",
     "name": "Fragarach",
@@ -94,8 +97,9 @@ Data example Add :
     "description": "A mythic weapon forged by Sidonie",
     "price": 300000000
 }
+```
 - DELETE (Remove) : http://localhost:8000/weapons/remove
-
+```sh
 {
     "id": "64108c2e01adab428f318fd1",
     "name": "Fragarach",
@@ -103,4 +107,4 @@ Data example Add :
     "description": "A mythic weapon forged by Sidonie",
     "price": 300000000
 }
-
+```
