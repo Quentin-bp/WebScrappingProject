@@ -49,28 +49,28 @@ If you want another name, go to the file Database.py and change the line 8 and 9
 Before to make everything, you have to install the data and insert them into the database.\
 You have to make the command : ```python DataMaker.py```\
 It will put inside the database all the data took on the website.\
-The link on the website is in the .env file.\
+The link on the website is in the .env file.
 
 
 
 ## || Run Test ||
 
-To load test, make the command: \
+To load test, make the command:  
 
 ```python TestUnit.py```
 
-You need to uncomment the test you want to make in the bottom of the file : TestUnit.py \
-For some test, you have to make the ID manually \
+You need to uncomment the test you want to make in the bottom of the file : TestUnit.py  
+For some test, you have to make the ID manually  
 
 ## || Run Web APP ||
 
- You have to make the command : ```streamlit run MainManager.py``` \
-From the App, you can add a weapon from a form, and remove a weapon from the main page. \
+ You have to make the command : ```streamlit run MainManager.py```  
+From the App, you can add a weapon from a form, and remove a weapon from the main page.  
 
 ## || Run API ||
 
-You have to make the command :```uvicorn Api:app --reload``` \
-Once done, you can use Postman (or other app you want) and load the following routes : \
+You have to make the command :```uvicorn Api:app --reload```  
+Once done, you can use Postman (or other app you want) and load the following routes :  
 
 - GET (Take all weapons): http://localhost:8000/weapons 
 - POST (Add) : http://localhost:8000/weapons/add
