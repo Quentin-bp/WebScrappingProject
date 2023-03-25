@@ -2,13 +2,14 @@ How to use it :
 
 You have to have the following library installed :
 
-For the use of the env file : pip install python-decouple
+For the use of the env file :```sh pip install python-decouple```
 
-For the Web App : pip install streamlit
+For the Web App : ```sh pip install streamlit```
 
-For the test : pip install unittest
+For the test : ```sh pip install unittest```
 
 For the api : 
+```sh
 pip install fastapi
 pip install uvicorn
 
@@ -18,21 +19,14 @@ pip install requests
 pip install streamlit
 pip install pydantic
 pip install pymongo
-
+```
 Create MongoDB Database named : DanMachiScraping
 Add Collection named : Weapons
 
 
 If you want another name, go to the file Database.py and change the line 8 and 9
 
-##|| First step ||
-Before to make everything, you have to install the data and insert them into the database.
-You have to make the command : python DataMaker.py 
-It will put inside the database all the data took on the website.
-The link on the website is in the .env file.
-
-
-Summary File : 
+## || Summary File || : 
 
 - Folder Pages :  Pages of the web app :
    - WeaponPage : Home page of the app
@@ -49,23 +43,32 @@ Summary File :
 - Weapon.py : Contains the structure of a weapon, used in all the project. Contains also the structure of the data sent for the api call.
 .env : Contains the web link for the scraped data
 
-##|| Run Test ||
+
+## || First step ||
+Before to make everything, you have to install the data and insert them into the database.
+You have to make the command : ```sh python DataMaker.py ```
+It will put inside the database all the data took on the website.
+The link on the website is in the .env file.
+
+
+
+## || Run Test ||
 
 To load test, make the command:
 
-python TestUnit.py
+```sh python TestUnit.py ```
 
 You need to uncomment the test you want to make in the bottom of the file : TestUnit.py
 For some test, you have to make the ID manually 
 
-##|| Run Web APP ||
+## || Run Web APP ||
 
-You have to make the command : streamlit run MainManager.py
+```sh You have to make the command : streamlit run MainManager.py ```
 From the App, you can add a weapon from a form, and remove a weapon from the main page.
 
-##|| Run API ||
+## || Run API ||
 
-You have to make the command : uvicorn Api:app --reload  
+You have to make the command : uvicorn Api:app --reload   ```
 Once done, you can use Postman (or other app you want) and load the following routes :
 
 - GET (Take all weapons): http://localhost:8000/weapons 
