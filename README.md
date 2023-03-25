@@ -2,7 +2,7 @@ How to use it :
 
 You have to have the following library installed :
 
-For the use of the env file :```sh pip install python-decouple```
+For the use of the env file :```pip install python-decouple```
 
 For the Web App : ```pip install streamlit```
 
@@ -47,7 +47,7 @@ If you want another name, go to the file Database.py and change the line 8 and 9
 
 ## || First step ||
 Before to make everything, you have to install the data and insert them into the database.
-You have to make the command : ``` python DataMaker.py ```
+You have to make the command : ```python DataMaker.py```
 It will put inside the database all the data took on the website.
 The link on the website is in the .env file.
 
@@ -57,19 +57,19 @@ The link on the website is in the .env file.
 
 To load test, make the command:
 
-```python TestUnit.py ```
+```python TestUnit.py```
 
 You need to uncomment the test you want to make in the bottom of the file : TestUnit.py
 For some test, you have to make the ID manually 
 
 ## || Run Web APP ||
 
- You have to make the command : ```streamlit run MainManager.py ```
+ You have to make the command : ```streamlit run MainManager.py```
 From the App, you can add a weapon from a form, and remove a weapon from the main page.
 
 ## || Run API ||
 
-You have to make the command :``` uvicorn Api:app --reload   ```
+You have to make the command :```uvicorn Api:app --reload```
 Once done, you can use Postman (or other app you want) and load the following routes :
 
 - GET (Take all weapons): http://localhost:8000/weapons 
