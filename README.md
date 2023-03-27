@@ -17,7 +17,6 @@ For the main fonctions :
 ```sh
 pip install panda
 pip install requests
-pip install streamlit
 pip install pydantic
 pip install pymongo
 ```
