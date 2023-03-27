@@ -20,7 +20,7 @@ class DatabaseTest(unittest.TestCase):
 
     def test_remove_weapon(self):
         weapon = Mock()
-        # prendre l'id dans la bdd, pour plus de faciliter
+        # prendre l'id dans la bdd, pour plus de facilite
         weapon.id = "PUT_AN_EXISTENT_ID"
         self.assertEqual(removeWeapon(weapon), "Deleted", "Id unknown")
 
