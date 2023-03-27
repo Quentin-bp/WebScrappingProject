@@ -1,6 +1,6 @@
 How to use it :
 
-You have to have the following library installed :
+You need to have the following library installed :
 
 For the use of the env file :```pip install python-decouple```
 
